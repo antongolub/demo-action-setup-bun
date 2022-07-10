@@ -18,6 +18,7 @@ jobs:
 
   second:
     name: Second job
+    needs: first
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
