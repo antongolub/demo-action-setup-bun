@@ -1,0 +1,26 @@
+{
+  "name": "demo-action-setup-bun",
+  "version": "0.0.0",
+  "description": "Testing repo to verify `action-setup-bun` work",
+  "main": "index.js",
+  "scripts": {
+    "test": "bun index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antongolub/demo-action-setup-bun.git"
+  },
+  "keywords": [
+    "bun"
+  ],
+  "author": "Anton Golub <antongolub@antongolub.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antongolub/demo-action-setup-bun/issues"
+  },
+  "homepage": "https://github.com/antongolub/demo-action-setup-bun#readme",
+  "dependencies": {
+    "@types/lodash": "^4.14.182",
+    "lodash": "^4.17.21"
+  }
+}
