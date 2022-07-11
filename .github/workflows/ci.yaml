@@ -16,6 +16,15 @@ jobs:
       - name: Install deps (cache warmup)
         run: bun install
 
+      # https://github.com/actions/toolkit/issues/58
+      - name: Setup Bun Runtime again
+        uses: antongolub/action-setup-bun@v1
+        with:
+          cache: true
+
+      - name: Run script
+        run: bun index.js
+
   second:
     name: Second job
     needs: first
