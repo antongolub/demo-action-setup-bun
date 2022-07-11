@@ -22,5 +22,8 @@
   "dependencies": {
     "@types/lodash": "^4.14.182",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@antongolub/iso8601": "0.2.0"
   }
 }

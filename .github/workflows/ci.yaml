@@ -21,6 +21,10 @@ jobs:
         uses: antongolub/action-setup-bun@v1
         with:
           cache: true
+          bun-config: '{"install: {"production": true}}'
+
+      - name: Install deps
+        run: bun install
 
       - name: Run script
         run: bun index.js
