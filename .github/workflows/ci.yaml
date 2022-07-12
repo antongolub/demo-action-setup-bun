@@ -12,6 +12,7 @@ jobs:
         uses: antongolub/action-setup-bun@v1
         with:
           cache: true
+          cache-bin: true
           bun-config: '{"install": {"production": true}}'
 
       - name: Install deps (cache warmup)
@@ -25,6 +26,7 @@ jobs:
         uses: antongolub/action-setup-bun@v1
         with:
           cache: true
+          cache-bin: true
           bun-config: '{}'
 
       - name: Install deps (2)
@@ -45,6 +47,7 @@ jobs:
         uses: antongolub/action-setup-bun@v1
         with:
           cache: true
+          cache-bin: true
 
       - name: Install deps (from cache)
         run: bun install
